@@ -1,43 +1,26 @@
 import React from 'react';
 import './App.css';
-
-// import retryTimes = jest.retryTimes;
+import Accord from "./components/Accord";
+import Rating from "./components/Rating";
 
 function App() {
     return (
-        <div>
-            <Rating/>
+        <div className={"main"}>
             <AppTitle/>
+            <Rating/>
+            <Accord/>
             <Rating/>
         </div>
     );
 }
 
-const Star = () => {
-    return (
-        <div>
-            Star
-        </div>
-    )
-}
-
-const Rating = () => {
-    return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
-    )
-}
-
 const AppTitle = () => {
+    console.log("AppTitle is rendering")
     return (<div className={"h1"}>
             <h1>Happy hacking!</h1>
         </div>
     )
 }
+
 
 export default App;

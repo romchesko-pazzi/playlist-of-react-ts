@@ -1,3 +1,28 @@
-.h1{
+.main {
     text-align: center;
+}
+
+.h1 {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.titleOfLang {
+    font-family: cursive;
+    color: #8478fd;
+}
+
+.accordBody ul > li {
+    list-style-type: none;
+}
+
+.accordBody ul > li:first-child {
+    color: rgba(255, 137, 0, 0.76);
+}
+
+.accordBody ul > li:nth-child(2){
+    color: rgb(56, 206, 21);
+}
+
+.accordBody ul > li:last-child{
+    color: #0040fd;
 }
