@@ -1,26 +1,25 @@
 import React from 'react';
 import './App.css';
-import Accord from "./components/Accord";
-import Rating from "./components/Rating";
+import Article2 from "./components/Article2";
+import {Rating} from "./components/Rating";
 
 function App() {
     return (
         <div className={"main"}>
-            <AppTitle/>
-            <Rating/>
-            <Accord/>
-            <Rating/>
+            <Article1 title={"Profile"}/>
+            <Article1 title={"Settings"}/>
+            <Rating value={0}/>
+            <Article2 title={"Top programming languages 2021"}/>
+            <Rating value={1}/>
         </div>
     );
 }
 
-const AppTitle = () => {
-    console.log("AppTitle is rendering")
-    return (<div className={"h1"}>
-            <h1>Happy hacking!</h1>
+const Article1 = (props:any) => {
+    return (<div className={"Article1"}>
+            <h2>{props.title}</h2>
         </div>
     )
 }
-
 
 export default App;

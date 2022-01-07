@@ -1,17 +1,69 @@
 import React from "react";
 import Star from "./Star";
 
-const Rating = () => {
-    console.log("Rating is rendering")
+export const Rating = (props: any) => {
+    if (props.value === 1) {
+        return (
+            <div>
+                <Star bolded={true}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+            </div>
+        )
+    }
+    if (props.value === 2) {
+        return (
+            <div>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+            </div>
+        )
+    }
+    if (props.value === 3) {
+        return (
+            <div>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={false}/>
+                <Star bolded={false}/>
+            </div>
+        )
+    }
+    if (props.value === 4) {
+        return (
+            <div>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={false}/>
+            </div>
+        )
+    }
+    if (props.value === 5) {
+        return (
+            <div>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+                <Star bolded={true}/>
+            </div>
+        )
+    }
     return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
+        <div>
+            <Star bolded={false}/>
+            <Star bolded={false}/>
+            <Star bolded={false}/>
+            <Star bolded={false}/>
+            <Star bolded={false}/>
+        </div>
     )
 }
-
-export default Rating;

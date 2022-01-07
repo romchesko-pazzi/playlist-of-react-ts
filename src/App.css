@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.h1 {
+.Article1 h1 {
     color: rgba(255, 0, 0, 0.7);
 }
 
@@ -11,18 +11,18 @@
     color: #8478fd;
 }
 
-.accordBody ul > li {
+.Article2Body ul > li {
     list-style-type: none;
 }
 
-.accordBody ul > li:first-child {
+.Article2Body ul > li:first-child {
     color: rgba(255, 137, 0, 0.76);
 }
 
-.accordBody ul > li:nth-child(2){
+.Article2Body ul > li:nth-child(2){
     color: rgb(56, 206, 21);
 }
 
-.accordBody ul > li:last-child{
+.Article2Body ul > li:last-child{
     color: #0040fd;
 }
