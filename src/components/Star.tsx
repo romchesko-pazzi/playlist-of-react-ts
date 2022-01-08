@@ -1,7 +1,12 @@
 import React from "react";
 
-const Star = (props: any) => {
-    if (props.bolded === true) {
+type StarPropsType = {
+    bolded:boolean;
+}
+
+
+const Star = (props: StarPropsType) => {
+    if (props.bolded) {
         return <span><b>Star </b></span>
     } else {
         return <span>Star </span>

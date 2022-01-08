@@ -1,15 +1,31 @@
 import React from "react";
 
-const Article2 = (props:any) => {
+type Article2PropsType = {
+    titleValue: string;
+    collapsed:boolean;
+}
+
+const Article2 = (props: Article2PropsType) => {
+    if (props.collapsed){
     return (
         <div>
-            <Article2Title title={props.title}/>
-            <Article2Body/>
+            <Article2Title title={props.titleValue}/>
+            <Article2Body title={props.titleValue}/>
+        </div>
+    )
+    }
+    return (
+        <div>
+            <Article2Title title={props.titleValue}/>
         </div>
     )
 }
 
-const Article2Title = (props:any) => {
+type Article2TitlePropsType = {
+    title:string
+}
+
+const Article2Title = (props: Article2TitlePropsType) => {
     return (
         <div className={"titleOfLang"}>
             <h3>{props.title}</h3>
@@ -17,7 +33,7 @@ const Article2Title = (props:any) => {
     )
 }
 
-const Article2Body = (props:any) => {
+const Article2Body = (props: any) => {
     return (
         <div className={"Article2Body"}>
             <ul>
