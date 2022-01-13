@@ -1,10 +1,6 @@
 import React from "react";
 
-type propsForBody = {
-    title: string
-}
-
-export const ArticleBody = (props: propsForBody) => {
+export const ArticleBody = () => {
     return (
         <div className={"ArticleBody"}>
             <ul>
