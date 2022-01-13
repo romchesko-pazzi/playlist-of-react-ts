@@ -1,5 +1,9 @@
 .main {
     text-align: center;
+    border: #0040fd 3px solid;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(217, 217, 114, 0.56);
 }
 
 .Article h1 {
@@ -19,10 +23,37 @@
     color: rgba(255, 137, 0, 0.76);
 }
 
-.ArticleBody ul > li:nth-child(2){
+.ArticleBody ul > li:nth-child(2) {
     color: rgb(56, 206, 21);
 }
 
-.ArticleBody ul > li:last-child{
+.ArticleBody ul > li:last-child {
     color: #0040fd;
+}
+
+.OnOff {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.on {
+    /*border: black 2px solid;*/
+    /*width: 50px;*/
+    /*height: 25px;*/
+    /*margin-right: 5px;*/
+}
+
+.off {
+    /*border: black 2px solid;*/
+    /*width: 50px;*/
+    /*height: 25px;*/
+}
+
+.indicator {
+    /*margin-left: 5px;*/
+    /*width: 30px;*/
+    /*height: 25px;*/
+    /*border: 1px black solid;*/
+    /*border-radius: 50%;*/
 }
