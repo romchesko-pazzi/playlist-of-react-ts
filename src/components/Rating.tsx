@@ -1,19 +1,27 @@
-import React from "react";
-import Star from "./Star";
-
-type RatingPropsType = {
-    value: 0 | 1 | 2 | 3 | 4 | 5;
-}
+import React, {useState} from "react";
+import {Star} from "./Star";
 
 
-export const Rating = (props: RatingPropsType) => {
+export const Rating = () => {
+
+    let [show, setShow] = useState(0)
+
+    let array = [
+        {star: 0, value: 1},
+        {star: 1, value: 2},
+        {star: 2, value: 3},
+        {star: 3, value: 4},
+        {star: 4, value: 5},
+    ]
     return (
         <div>
-            <Star bolded={props.value > 0}/>
-            <Star bolded={props.value > 1}/>
-            <Star bolded={props.value > 2}/>
-            <Star bolded={props.value > 3}/>
-            <Star bolded={props.value > 4}/>
+            {array.map(m => {
+                return (<>
+                        <Star bolded={show > m.star}/>
+                        <button onClick={() => setShow(m.value)}>Rate</button>
+                    </>
+                )
+            })}
         </div>
     )
 }

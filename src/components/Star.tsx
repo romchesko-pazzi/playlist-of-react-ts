@@ -5,12 +5,10 @@ type StarPropsType = {
 }
 
 
-const Star = (props: StarPropsType) => {
+export const Star = (props: StarPropsType) => {
     if (props.bolded) {
         return <span><b>Star </b></span>
     } else {
         return <span>Star </span>
     }
 }
-
-export default Star;

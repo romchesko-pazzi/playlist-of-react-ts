@@ -4,9 +4,6 @@ export const OnOff = () => {
 
 let [on, setOn] = useState(false)
 
-
-
-
     const onStyle = {
         border: "black 2px solid",
         width: "50px",
