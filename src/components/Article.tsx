@@ -16,7 +16,6 @@ const Article = (props: ArticlePropsType) => {
             setIsExpanded(false)
         }
     }
-
     return (
         <div>
             <ArticleTitle title={props.titleValue}/>
