@@ -4,19 +4,16 @@ import {ArticleBody} from "./ArticleBody";
 
 type ArticlePropsType = {
     titleValue: string;
+    callBack: () => void;
+    value: boolean;
 }
 
 export const Article = (props: ArticlePropsType) => {
-    const [isExpanded, setIsExpanded] = useState(false);
 
-    const onClickHandler = () => {
-        return setIsExpanded(!isExpanded);
-    }
     return (
         <div>
-            <ArticleTitle title={props.titleValue}/>
-            <button onClick={onClickHandler}>expand</button>
-            {isExpanded && <ArticleBody/>}
+            <ArticleTitle callBack={props.callBack} title={props.titleValue}/>
+            {props.value && <ArticleBody/>}
         </div>
     )
 }
