@@ -3,7 +3,7 @@
     border: #0040fd 3px solid;
     width: 1000px;
     margin: 0 auto;
-    background-color: rgba(217, 217, 114, 0.56);
+    background-color: rgba(255, 236, 219, 0.56);
 }
 
 .Article h1 {
@@ -20,15 +20,15 @@
 }
 
 .ArticleBody ul > li:first-child {
-    color: rgba(255, 137, 0, 0.76);
+    color: rgba(0, 21, 255, 0.76);
 }
 
 .ArticleBody ul > li:nth-child(2) {
-    color: rgb(56, 206, 21);
+    color: rgb(246, 4, 11);
 }
 
 .ArticleBody ul > li:last-child {
-    color: #0040fd;
+    color: #1e7c10;
 }
 
 .OnOff {

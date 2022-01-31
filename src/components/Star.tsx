@@ -13,7 +13,7 @@ export const Star = (props: StarPropsType) => {
 
     return (
         <div>
-            <span onClick={onClickHandler}>{props.bolded ? <span><b>STAR</b></span> : <span>STAR</span>}</span>
+            <span onClick={onClickHandler}>{props.bolded ? <b>STAR</b> : "STAR"}</span>
         </div>
     )
 

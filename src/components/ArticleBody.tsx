@@ -4,9 +4,9 @@ export const ArticleBody = () => {
     return (
         <div className={"ArticleBody"}>
             <ul>
-                <li>JavaScript</li>
-                <li>Python</li>
+                <li>C</li>
                 <li>Java</li>
+                <li>Python</li>
             </ul>
         </div>
     )
