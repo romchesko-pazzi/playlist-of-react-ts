@@ -6,23 +6,17 @@ type ArticlePropsType = {
     titleValue: string;
 }
 
-const Article = (props: ArticlePropsType) => {
+export const Article = (props: ArticlePropsType) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    const onClickHandler = (par: boolean) => {
-        if (!par) {
-            setIsExpanded(true)
-        } else {
-            setIsExpanded(false)
-        }
+    const onClickHandler = () => {
+        return setIsExpanded(!isExpanded);
     }
     return (
         <div>
             <ArticleTitle title={props.titleValue}/>
-            <button onClick={() => onClickHandler(isExpanded)}>expand</button>
+            <button onClick={onClickHandler}>expand</button>
             {isExpanded && <ArticleBody/>}
         </div>
     )
 }
-
-export default Article;
