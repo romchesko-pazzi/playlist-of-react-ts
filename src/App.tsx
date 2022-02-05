@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import './App.css';
 import {Article} from "./components/Article";
 import {Rating} from "./components/Rating";
-import {OnOff} from "./components/OnOff";
+// import {OnOff} from "./components/OnOff";
+import {OnOffUncontrolled} from "./components/OnOffUncontrolled";
 
 function App() {
-    const [isExpanded, setIsExpanded] = useState<boolean>(false);
+    const [isExpanded, setIsExpanded] = useState<boolean>(true);
     const [on, setOn] = useState<boolean>(true);
     console.log(isExpanded);
     return (
@@ -14,7 +15,8 @@ function App() {
                      callBack={() => setIsExpanded(!isExpanded)}
                      value={isExpanded}/>
             <Rating/>
-            <OnOff value={on} callBack={()=>setOn(!on)}/>
+            <OnOffUncontrolled callback={setOn}/>{on.toString()}
+            {/*<OnOff value={on} callBack={setOn}/>*/}
         </div>
     );
 }
