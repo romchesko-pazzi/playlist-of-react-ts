@@ -1,6 +1,6 @@
 import React from "react";
-import {ArticleTitle} from "./ArticleTitle";
-import {ArticleBody} from "./ArticleBody";
+import {ArticleTitle} from "../ArticleTitle/ArticleTitle";
+import {ArticleBody} from "../ArticleBody/ArticleBody";
 
 type ArticlePropsType = {
     titleValue: string;
