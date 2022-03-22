@@ -1,0 +1,54 @@
+.title {
+    border: 2px #868686 solid;
+    border-radius: 5px;
+    font-size: 36px;
+    font-family: cursive;
+    margin: 25px auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title:hover {
+    border: #0080ff 2px solid;
+    transition: 0.2s;
+}
+
+.triangleDown {
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #6281e7;
+    cursor: pointer;
+}
+
+.triangleUp {
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #6281e7;
+    cursor: pointer;
+}
+
+.wrapperForOptions {
+    margin: 0 auto;
+    width: 150px;
+    border: 2px #0080ff solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.option {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: #a2a2a2;
+    color: white;
+}

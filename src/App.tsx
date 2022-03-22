@@ -1,22 +1,27 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Article} from "./components/Article";
-import {Rating} from "./components/Rating";
-// import {OnOff} from "./components/OnOff";
-import {OnOffUncontrolled} from "./components/OnOffUncontrolled";
+import {CustomSelect} from "./lesson 14/CustomSelect";
+
 
 function App() {
-    const [isExpanded, setIsExpanded] = useState<boolean>(true);
-    const [on, setOn] = useState<boolean>(true);
-    console.log(isExpanded);
+
+    const users = [
+        {name: "user1", id: 1},
+        {name: "user2", id: 2},
+        {name: "user3", id: 3},
+        {name: "user4", id: 4},
+    ];
+
+    const [title, setTitle] = useState("Users");
+
+
+    const setUsersHandler = (value: string) => {
+        setTitle(value);
+    }
+
     return (
         <div className={"main"}>
-            <Article titleValue={"Top programming languages 2021"}
-                     callBack={() => setIsExpanded(!isExpanded)}
-                     value={isExpanded}/>
-            <Rating/>
-            <OnOffUncontrolled callback={setOn}/>{on.toString()}
-            {/*<OnOff value={on} callBack={setOn}/>*/}
+            <CustomSelect value={users} title={title} callBack={setUsersHandler}/>
         </div>
     );
 }
